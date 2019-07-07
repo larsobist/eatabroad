@@ -1,0 +1,86 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+#title {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    transition: 0.5s;
+    box-sizing: border-box;
+    padding: 0 140px 185px 0;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    color: #bcbdbeff;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: lowercase;
+    line-height: 50px;
+}
+
+nav ul li a:hover {
+    background-color: #bcbdbeff;
+    color: white;
+}
+#main{
+    position: absolute;
+    
+    width: calc(100% - 560px);
+    min-height: 100%;
+    padding: 100px 280px 50px;
+    justify-content: center;
+    align-items: center;
+}
+#content {
+    width: 100%;
+    position: relative;
+}
+
+section {
+    background-color: white;
+    height: auto;
+    margin: 0;
+    margin-bottom: 75px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.video {}
+
+#gericht1 {
+    padding: 50px 100px 40px 100px;
+    
+}
+
+#gericht2 {
+    padding: 50px 100px 40px 100px;
+}
+
+#attraktionen {}
+
+#buchen {}
+
+#footer {}
