@@ -4,6 +4,7 @@ html {
     padding: 0;
     background-color: white;
     /*    overflow: hidden;*/
+    font-family: Avenir;
 }
 
 @font-face {
@@ -57,7 +58,7 @@ li {
 
 #laender ul li a {
     display: block;
-        border-radius: 90px;
+    border-radius: 90px;
 }
 
 #laender ul li a:hover {
@@ -93,6 +94,22 @@ h1 {
     font-family: PoiretOne, arial, sans-serif;
 }
 
+h2 {
+    color: black;
+    transform: translate(-50%, -50%);
+    font-size: 25pt;
+    font-family: PoiretOne, arial, sans-serif;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    transform: translate(-50%, -50%);
+    font-size: 17pt;
+    text-align: center;
+}
+
 nav {
     position: sticky;
     top: 0;
@@ -100,13 +117,14 @@ nav {
     height: 50px;
     transition: 0.5s;
     box-sizing: border-box;
-    padding: 0 140px 0 140px;
-    font-size: 35pt;
+    padding: 0 140px 0 215px;
+    font-size: 25pt;
     font-family: PoiretOne, arial, sans-serif;
 }
 
 nav img {
-    height: 60px;
+    padding: 20px 0 10px 0;
+    height: 40px;
     width: auto;
 }
 
@@ -131,7 +149,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #bcbdbeff;
+    /*    background-color: #bcbdbeff;*/
     color: black;
 }
 
@@ -150,15 +168,64 @@ nav ul li a:hover {
     position: relative;
 }
 
+.inhaltsTrennung {
+    height: 30px;
+}
+
+.bildLinks img {
+    height: auto;
+    width: 200px;
+    border-radius: 180px;
+    float: left;
+}
+
+.bildMitte img {
+    height: auto;
+    width: 200px;
+    border-radius: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.bildRechts img {
+    height: auto;
+    width: 200px;
+    border-radius: 180px;
+    float: right;
+}
+
+.textRechts {
+    width: 50%;
+    margin: 0 0 0 40%;
+}
+
+.textLinks {
+    width: 50%;
+    margin: 0 0 0 10%;
+}
+
+.hervorhebung {
+    background-color: white;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+}
+
 section {
     background-color: white;
     height: auto;
     margin: 0;
     margin-bottom: 75px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
 }
 
-.video {}
+.video {
+    background: lightgray;
+}
 
 #gericht1 {
     padding: 50px 100px 40px 100px;
@@ -167,12 +234,16 @@ section {
 
 #gericht2 {
     padding: 50px 100px 40px 100px;
-    font-family: Avenir;
+
 }
 
-#attraktionen {}
+#attraktionen {
+     padding: 50px 100px 40px 100px;
+}
 
-#buchen {}
+#buchen {
+     padding: 50px 100px 40px 100px;
+}
 
 #footer {
     text-align: center;
