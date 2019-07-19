@@ -59,6 +59,7 @@ li {
 #laender ul li a {
     display: block;
     border-radius: 90px;
+      transition: 1s;
 }
 
 #laender ul li a:hover {
