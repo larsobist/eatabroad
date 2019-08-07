@@ -264,22 +264,11 @@ section {
     padding: 50px 100px 40px 100px;
 }
 
-#footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 25pt;
-    font-family: PoiretOne, arial, sans-serif;
-}
-
 .sponsoren {
-    margin-top: 5000px;
+/*    width: 100vw;*/
+    margin-top: 300px;
     padding: 40px;
-    height: 150px;
+    height: auto;
     background: #BCBDBE;
     text-align: center;
     font-size: 17pt;
