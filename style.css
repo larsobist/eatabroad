@@ -16,6 +16,33 @@ html {
     font-size: 150px;
 }
 
+#top{
+    width:  50px;
+    height:  50px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+/*    position: relative;*/
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 40vw;
+    left: 90vw;
+    z-index: 11;
+    display: flex;
+}
+#top:hover{
+    transform: scale(1.3);
+    transition: 1.5s;
+}
+#top span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid #BCBDBE;
+    border-right: 2px solid #BCBDBE;
+    transform: rotate(225deg);
+}
+
 nav {
     position: sticky;
     z-index: 10;
