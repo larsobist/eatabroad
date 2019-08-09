@@ -2,85 +2,204 @@ body,
 html {
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 #title {
     width: 100%;
     height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+#title h1{
+    font-size: 150px;
 }
 
 nav {
     position: sticky;
+    z-index: 10;
     top: 0;
     width: 100%;
     height: 50px;
-    transition: 0.5s;
+    transition: 5s;
     box-sizing: border-box;
-    padding: 0 140px 185px 0;
+    margin: 0;
+    padding: 0 200px;
+/*    padding: 0 140px 185px 0;*/
+    background:rgba(255, 255, 255, 0.9);
+    color: #BCBDBE;
 }
-
 nav ul {
     display: flex;
     margin: 0;
     padding: 0;
     float: right;
+    color: #BCBDBE;
 }
-
 nav ul li {
+    
     list-style: none;
+    color: #BCBDBE;
 }
-
 nav ul li a {
+/*    font-family: Poiret One; */
     display: block;
-    color: #bcbdbeff;
+    color: #BCBDBE;
     padding: 0 20px;
     text-decoration: none;
     text-transform: lowercase;
     line-height: 50px;
+    font-weight: bold;
 }
-
 nav ul li a:hover {
-    background-color: #bcbdbeff;
+    background-color: #BCBDBE;
     color: white;
 }
+nav #navlogo{
+    font-family: Poiret One; 
+    font-size: 30px;
+}
+
 #main{
-    position: absolute;
-    
+/*    position: absolute;    */
+    z-index: 2;
+    margin: 0;
+    position: relative;
     width: calc(100% - 560px);
     min-height: 100%;
-    padding: 100px 280px 50px;
+    padding: 0 280px 50px;
     justify-content: center;
     align-items: center;
 }
 #content {
+    margin: 0;
     width: 100%;
     position: relative;
 }
 
 section {
     background-color: white;
+    width: 100%;
     height: auto;
+    min-height: 30vh;
     margin: 0;
     margin-bottom: 75px;
+    border-radius: 25px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-.video {}
+.r{
+    float: right;
+}
+.l{
+    float: left;
+}
+.clear{
+    clear: both;
+}
+p{
+    text-align: justify
+}
+h1{
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-family: Poiret One; 
+    text-transform: lowercase;
+}
+a{text-decoration: none;
+color: black;}
 
-#gericht1 {
+.video {  
+    height: calc(100% - 560px);
+    margin-top: 100px;
+    margin-bottom: 75px;
+    background-color: transparent;
+}
+.video iframe{
+    width: 100%; 
+    height: calc((100% / 16) *9 );
+}
+
+.gericht{
+    width: calc(100% - 200px);
+    margin: 75px 0px;
     padding: 50px 100px 40px 100px;
+}
+.gericht p{
+    position: relative;
+    width: 530px;
+    margin: 20px 5px;
+}
+.gericht img{
+    height: auto;
+    width: 20%;
+    border-radius: 50%; 
     
 }
+.gericht img:hover{
+    border-radius: 3%;
+    transition: 1.5s;
+}
+#gericht1 {
 
+}
 #gericht2 {
-    padding: 50px 100px 40px 100px;
+
 }
 
-#attraktionen {}
+#attraktionen { 
+    width: calc(100% - 200px);
+    margin: 75px 0px;
+    padding: 50px 100px 40px 100px;
+}
+#attraktionen p{
+    position: relative;
+    width: 530px;
+    margin: 20px;
+}
+#attraktionen img{
+    height: auto;
+    width: 20%;
+    border-radius: 50%; 
+    margin: 20px;
+}
+#attraktionen img:hover{
+    border-radius: 3%;
+    transition: 1.5s;
+}
 
-#buchen {}
 
-#footer {}
+#buchen {
+    width: calc(100% - 100px);
+    padding: 10px 50px;;
+    display: flex;
+}
+#buchen img{
+    height: auto;
+    width: 20%;
+    border-radius: 50%;
+}
+
+#footer {
+    bottom: 0;
+    height: auto;
+    background: #BCBDBE;
+    text-align: center;
+    padding: 50px 0;
+    color: gray;
+}
+#footer a{
+    color: gray;
+}
+#footer img{
+    position: relative;
+    filter: grayscale(100%);
+    height: 70px;
+    margin: 0 5px 30px 5px;
+}
+#footer img:hover{
+    filter: grayscale(0%);
+    transition: 1s;
+}
+
