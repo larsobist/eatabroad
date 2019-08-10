@@ -110,6 +110,7 @@ section {
     width: 100%;
     height: auto;
     min-height: 30vh;
+/*    display: flex;*/
     margin: 0;
     margin-bottom: 75px;
     border-radius: 25px;
@@ -134,8 +135,10 @@ h1{
     font-family: Poiret One; 
     text-transform: lowercase;
 }
-a{text-decoration: none;
-color: black;}
+a{
+    text-decoration: none;
+    color: black;
+}
 
 .video {  
     height: calc(100% - 560px);
@@ -173,6 +176,56 @@ color: black;}
 }
 #gericht2 {
 
+}
+
+.rating{
+    position: relative;
+    width: 500px;
+    height: 150px;
+    float: left;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    overflow: hidden;
+}
+.rating .slideshow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1500px;
+    height: auto;
+    animation: slideRating 10s linear infinite;
+}
+.rating .slide{
+    width: 33.33%;
+    height: 100px;
+    float: left;
+}
+@keyframes slideRating{
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    30% {
+        left: -500px;
+    }
+    50% {
+        left: -500px;
+    }
+    60%{
+        left: -1000px;
+    }
+    90%{
+        left: -1000px;
+    }
+    95%{
+        left: -500px;
+    }
+    100%{
+        left: 0;
+    }
 }
 
 #attraktionen { 
