@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    max-width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.5s;
+}
+.container:hover .card{
+    filter: blur(5px);
+    transform: scale(.7);
+}
+.container .card:hover{
+    transform: scale(2);
+    filter: blur(0px);
+    color: black;
+}
+.leer{
+    width: 75px;
+    height: 150px;
+}
+.card{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: firebrick;
+    border-radius: 50%;
+    color: transparent;
+}
+.content{
+    text-align: center;
+    z-index: 2;
+    padding: 0 20px;
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+}
