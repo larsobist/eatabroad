@@ -180,14 +180,16 @@ a{
     
 }
 .gericht img:hover{
-    transition: 2s;
+    transition: 1.5s;
     border-radius: 3%;
 }
-#gericht1 {
-
+#gericht1 img:hover{
+    transition: 1.5s;
+    border-radius: 3%;
 }
-#gericht2 {
-
+#gericht2 img:hover{
+    transition: 1.5s;
+    border-radius: 3%;
 }
 
 .button{
@@ -318,3 +320,15 @@ a{
     transition: 1s;
 }
 
+@media only screen and (max-width: 600px){
+    
+    
+    
+}
+#more{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+34,ffffff+95&0+1,1+57 */
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0) 1%, rgba(255,255,255,0.59) 34%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 95%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,0.59) 34%,rgba(255,255,255,1) 57%,rgba(255,255,255,1) 95%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,0.59) 34%,rgba(255,255,255,1) 57%,rgba(255,255,255,1) 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
