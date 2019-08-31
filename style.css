@@ -210,7 +210,7 @@ html {
 
     .gericht p {
         position: relative;
-        width: 530px;
+        width: 400px;
         margin: 20px 5px;
     }
 
@@ -255,7 +255,8 @@ html {
 
     .rating {
         position: relative;
-        width: 500px;
+        width: 400px;
+/*        width: 500px;*/
         height: 150px;
         border-radius: 25px;
         box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
@@ -265,17 +266,22 @@ html {
 
     .rating .slideshow {
         position: absolute;
-        top: 0;
+        top: 20px;
         left: 0;
-        width: 1500px;
+        width: 1230px;
         height: auto;
-        animation: slideRating 10s linear infinite;
+        animation: slideRating 30s linear infinite;
     }
 
     .rating .slide {
-        width: 33.33%;
+/*        width: 490px;*/
+/*        padding: 5.5px;*/
+        width: 380px;
+        margin: 10px;
+/*        margin: 3px;*/
         height: 100px;
         float: left;
+        text-align: justify;
     }
 
     @keyframes slideRating {
@@ -288,19 +294,19 @@ html {
         }
 
         30% {
-            left: -500px;
+            left: -400px;
         }
 
         50% {
-            left: -500px;
+            left: -400px;
         }
 
         60% {
-            left: -1000px;
+            left: -800px;
         }
 
         90% {
-            left: -1000px;
+            left: -800px;
         }
 
         95% {
