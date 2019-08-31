@@ -4,13 +4,17 @@ html {
     padding: 0;
     background-color: white;
     width: 100vw;
-    font-family: 'Avenir', 'Arial';
+    font-family: 'Avenir', 'AvenirLT', 'Arial';
     /*    overflow-x: hidden;*/
     scroll-behavior: smooth;
 }
 @font-face {
-    font-family: 'Avenir';
+    font-family: 'AvenirLT';
     src: url('/Schriften/AvenirLTStd-Medium.otf') format('truetype');
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url('/Schriften/Avenirtff') format('truetype');
 }
 
 #title {
