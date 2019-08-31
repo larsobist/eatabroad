@@ -12,7 +12,49 @@ a {
     text-decoration: none;
 }
 
+#kyoto {
+    background: url(img/sonstige/QKyoto.jpg);
+    background-size: cover;
+}
+
+#kapstadt {
+    background: url(img/sonstige/QKapstadt.jpg);
+    background-size: cover;
+}
+
+#Lima {
+    background: url(img/sonstige/QLima.jpg);
+    background-size: cover;
+}
+
+#Marrakesh {
+    background: url(img/sonstige/QMarrakesh.jpg);
+    background-size: cover;
+}
+
+#MexicoCity {
+    background: url(img/sonstige/QMexicoCity.jpg);
+    background-size: cover;
+}
+
+#Phuket {
+    background: url(img/sonstige/QPhuket.jpg);
+    background-size: cover;
+}
+
+#SantiagoDeChile {
+    background: url(img/sonstige/QSantiagoDeChile.jpg);
+    background-size: cover;
+}
+
 @media screen and (min-width: 1000px) {
+    #desktop{
+        display: block;
+    }
+    #mobile{
+        display: none;
+    }
+    
     .container {
         max-width: 1000px;
         position: relative;
@@ -49,25 +91,31 @@ a {
     .leer {
         height: 150px;
     }
+
     .leer:nth-child(1) {
         width: 10px;
     }
+
     .leer:nth-child(4) {
         width: 60px;
     }
+
     .leer:nth-child(6) {
         width: 20px;
     }
+
     .leer:nth-child(8) {
         width: 90px;
     }
+
     .leer:nth-child(10) {
         width: 10px;
     }
+
     .leer:nth-child(12) {
         width: 15px;
     }
-    
+
     .card {
         position: relative;
         width: 100px;
@@ -78,13 +126,9 @@ a {
         transition: 0.5s;
         margin-right: 10px;
         margin-top: 15px;
-/*        background-color: firebrick;*/
+        /*        background-color: firebrick;*/
         border-radius: 50%;
         color: transparent;
-    }
-    .card:nth-child(1){
-        background: url(img/sonstige/Kyoto.jpg);
-        background-size: cover;
     }
 
     .content {
@@ -96,6 +140,12 @@ a {
 }
 
 @media screen and (max-width: 999px) {
+     #desktop{
+        display: block;
+    }
+    #mobile{
+        display: none;
+    }
     .container {
         max-width: 600px;
         position: relative;
@@ -133,36 +183,33 @@ a {
     }
 
     .leer {
-        height: 100px;
+        height: 150px;
     }
+
     .leer:nth-child(1) {
+        width: 10px;
+    }
+
+    .leer:nth-child(4) {
+        width: 60px;
+    }
+
+    .leer:nth-child(6) {
+        width: 20px;
+    }
+
+    .leer:nth-child(8) {
         width: 90px;
     }
-    .leer:nth-child(4) {
-        width: 200px;
-    }
-    .leer:nth-child(6) {
-        width: 00px;
-    }
-    .leer:nth-child(8) {
-        width: 200px;
-    }
+
     .leer:nth-child(10) {
-        width: 0px;
+        width: 10px;
     }
+
     .leer:nth-child(12) {
-        width: 0px;
+        width: 15px;
     }
-    #rowtwo{
-/*        margin-left: 70px;*/
-        margin-left: 90px;
-/*        margin-left: 75px;*/
-    } 
-    #rowthree{
-/*        margin-left: 70px;*/
-        margin-left: 0px;
-/*        margin-left: 75px;*/
-    }
+
     .card {
         position: relative;
         width: 100px;
@@ -173,10 +220,9 @@ a {
         transition: 0.5s;
         margin-right: 10px;
         margin-top: 15px;
-        background-color: firebrick;
+        /*        background-color: firebrick;*/
         border-radius: 50%;
         color: transparent;
-        /*    animation: load ease-in 7s;*/
     }
 
     .content {
@@ -187,11 +233,19 @@ a {
     }
 
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 780px) {
+     #desktop{
+        display: none;
+    }
+    #mobile{
+        display: block;
+    }
     .container {
         max-width: 367px;
         position: relative;
         display: flex;
+        height: auto;
         flex-wrap: wrap;
         transition: 0.5s;
     }
@@ -203,9 +257,11 @@ a {
 
     #city {
         max-width: 367px;
+        min-height: 400px;
+        height: auto;
         width: 367px;
         display: flex;
-        justify-content: center;
+/*        justify-content: center;*/
         flex-wrap: wrap;
         transition: 0.5s;
     }
@@ -218,41 +274,20 @@ a {
     #city .card:hover {
         transform: scale(1.5);
         filter: blur(0px);
-        color: black;
+        color: white;
 
     }
 
-    .leer {
-        height: 100px;
+    #rowone {
+        height: 100%;
+        margin-right: 0;
+        margin-top: 50px;
     }
-    .leer:nth-child(1) {
-        width: 0px;
+    #rowtwo {
+        height: 100%;
+        margin-left: 0;
     }
-    .leer:nth-child(4) {
-        width: 100px;
-    }
-    .leer:nth-child(6) {
-        width: 0px;
-    }
-    .leer:nth-child(8) {
-        width: 100px;
-    }
-    .leer:nth-child(10) {
-        width: px;
-    }
-    .leer:nth-child(12) {
-        width: 0px;
-    }
-    #rowtwo{
-/*        margin-left: 70px;*/
-        margin-left: 0px;
-/*        margin-left: 75px;*/
-    } 
-    #rowthree{
-/*        margin-left: 70px;*/
-        margin-left: 10px;
-/*        margin-left: 75px;*/
-    }
+
     .card {
         position: relative;
         width: 100px;
@@ -261,7 +296,7 @@ a {
         justify-content: center;
         align-items: center;
         transition: 0.5s;
-        margin-right: 10px;
+/*        margin-right: 10px;*/
         margin-top: 15px;
         background-color: firebrick;
         border-radius: 50%;
