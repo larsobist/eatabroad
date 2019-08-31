@@ -10,7 +10,7 @@ html {
 }
 @font-face {
     font-family: 'Avenir';
-    src: url('/Schriften/Avenir.ttf') format('truetype');
+    src: url('/Schriften/AvenirLTStd-Medium.otf') format('truetype');
 }
 
 #title {
