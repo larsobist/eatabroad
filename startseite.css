@@ -78,9 +78,13 @@ a {
         transition: 0.5s;
         margin-right: 10px;
         margin-top: 15px;
-        background-color: firebrick;
+/*        background-color: firebrick;*/
         border-radius: 50%;
         color: transparent;
+    }
+    .card:nth-child(1){
+        background: url(img/sonstige/Kyoto.jpg);
+        background-size: cover;
     }
 
     .content {
