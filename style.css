@@ -30,15 +30,7 @@ html {
     font-size: 10vw;
     color: white;
 }
-nav {
-        position: sticky;
-        top: 0;
-    z-index: 10;}
-/*
-    nav ul li:hover {
-        border-bottom: 1px solid #BCBDBE;
-    }
-*/
+
 
 @media screen and (min-width: 1025px) {
 
@@ -84,7 +76,8 @@ nav {
     }
 
     nav {
-        position: sticky;
+        position: fixed;
+/*        position: sticky;*/
         top: 0;
         z-index: 10;
         width: 100%;
@@ -449,7 +442,8 @@ nav {
     }
 
     nav {
-        position: sticky;
+        position: fixed;
+/*        position: sticky;*/
         top: 0;
         z-index: 10;
         /*        width: 94%;*/
@@ -482,8 +476,10 @@ nav {
     }
 
     nav ul li:hover {
-        background-color: #BCBDBE;
-        color: white;
+/*        color: white;*/
+/*        background-color: #BCBDBE;*/
+        border-bottom: 1px solid #BCBDBE;
+        
     }
     nav ul li {
         list-style: none;
