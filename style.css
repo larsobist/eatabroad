@@ -4,13 +4,15 @@ html {
     padding: 0;
     background-color: white;
     width: 100vw;
-/*    font-family: 'Avenir Book', 'Arial';*/
+    font-family: 'Avenir', 'Arial';
     /*    overflow-x: hidden;*/
+    scroll-behavior: smooth;
 }
 @font-face {
     font-family: 'Avenir';
     src: url('/Schriften/Avenir.ttf') format('truetype');
 }
+
 #title {
     width: 100%;
     height: 100vh;
