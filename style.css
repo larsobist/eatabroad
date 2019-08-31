@@ -6,6 +6,7 @@ html {
     width: 100vw;
     font-family: 'Avenir', 'Arial';
     /*    overflow-x: hidden;*/
+    scroll-behavior: smooth;
 }
 @font-face {
     font-family: 'Avenir';
