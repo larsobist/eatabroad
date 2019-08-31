@@ -42,7 +42,7 @@ a {
     #city .card:hover {
         transform: scale(1.5);
         filter: blur(0px);
-        color: black;
+        color: white;
 
     }
 
