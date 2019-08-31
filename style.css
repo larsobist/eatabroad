@@ -4,8 +4,8 @@ html {
     padding: 0;
     background-color: white;
     width: 100vw;
-    /*    font-family: ''*/
-    overflow-x: hidden;
+    font-family: 'Avenir Book', 'Arial';
+    /*    overflow-x: hidden;*/
 }
 
 #title {
@@ -20,14 +20,23 @@ html {
     font-size: 150px;
 }
 
+/*
+    nav ul li:hover {
+        border-bottom: 1px solid #BCBDBE;
+    }
+*/
+
 @media screen and (min-width: 1025px) {
+
     /*    desktop*/
-    .mobile{
+    .mobile {
         display: none;
     }
-    .desktop{ 
+
+    .desktop {
         display: block;
     }
+
     #top {
         width: 50px;
         height: 50px;
@@ -59,36 +68,56 @@ html {
         transform: rotate(225deg);
     }
 
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+        height: auto;
+        min-height: 50px;
+        max-height: 100px;
+        margin: 0;
+        padding: 0 200px;
+        /*    padding: 0 140px 185px 0;*/
+        background: rgba(255, 255, 255, 0.9);
+        color: #BCBDBE;
+        transition: 5s;
+        box-sizing: border-box;
+    }
+
     nav ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    float: right;
-    color: #BCBDBE;
-}
-nav ul li {
-    
-    list-style: none;
-    color: #BCBDBE;
-}
-nav ul li a {
-/*    font-family: Poiret One; */
-    display: block;
-    color: #BCBDBE;
-    padding: 0 20px;
-    text-decoration: none;
-    text-transform: lowercase;
-    line-height: 50px;
-    font-weight: bold;
-}
-nav ul li a:hover {
-    background-color: #BCBDBE;
-    color: white;
-}
-nav #navlogo{
-    font-family: Poiret One; 
-    font-size: 30px;
-}
+        display: flex;
+        margin: 0;
+        padding: 0;
+        float: right;
+        color: #BCBDBE;
+    }
+
+    nav ul li {
+
+        list-style: none;
+        color: #BCBDBE;
+    }
+
+    nav ul li a {
+        /*    font-family: Poiret One; */
+        display: block;
+        color: #BCBDBE;
+        padding: 0 20px;
+        text-decoration: none;
+        text-transform: lowercase;
+        line-height: 50px;
+        font-weight: bold;
+    }
+
+    nav ul li:hover {
+        border-bottom: 1px solid #BCBDBE;
+    }
+
+    nav #navlogo {
+        font-family: Poiret One;
+        font-size: 30px;
+    }
 
     #main {
         /*    position: absolute;    */
@@ -319,9 +348,11 @@ nav #navlogo{
         justify-content: center;
         position: relative;
     }
-    #buchen .desktop{
+
+    #buchen .desktop {
         width: 100%;
     }
+
     #buchen img {
         /*
     height: 20px;
@@ -332,10 +363,12 @@ nav #navlogo{
         height: 100%;
         z-index: 5;
     }
-    #buchentext{
-        width: 500px; 
+
+    #buchentext {
+        width: 500px;
         margin: auto;
     }
+
     #flug {
         width: 150px;
         height: 150px;
@@ -378,44 +411,71 @@ nav #navlogo{
 
 
 /*@media screen and (max-width: 600px) {*/
-    @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+
     /*    smartphone*/
-    .mobile{
+    .mobile {
         display: block;
     }
-    .desktop{ 
+
+    .desktop {
         display: none;
     }
+
     #top {
         display: none;
     }
 
     nav {
-        top: 0;
         position: sticky;
-        z-index: 10;  
-        width: 94%;
+        top: 0;
+        z-index: 10;
+        /*        width: 94%;*/
+        width: 100%;
         padding: 3%;
-        height: 50px;
-        
+        height: auto;
+        min-height: 50px;
+        max-height: 100px;
         margin: 0;
         background: rgba(255, 255, 255, 0.9);
-        color: #BCBDBE;
-        
-        transition: 5s;
+        /*        transition: 5s;*/
         box-sizing: border-box;
-        
+/*        border: 1px solid black;*/
+        display: flex;
+
     }
+
     nav ul {
-        display: none;
-        margin: 0;
+        position: absolute;
+        left: 0;
+        background: rgba(255, 255, 255, 0.9);
+        /*        display: none;*/
+        margin-top: 60px;
+        width: 100vw;
+        height: 100vh;
+        /*        box-sizing: border-box;*/
+        /*        margin: 0;*/
         padding: 0;
         color: #BCBDBE;
+    }
+
+    nav ul li:hover {
+        background-color: #BCBDBE;
+        color: white;
     }
     nav ul li {
         list-style: none;
         color: #BCBDBE;
+        width: 100vw;
     }
+    
+    .showMenu {
+        /*        display: block;*/
+        transition: 3s;
+        display: none;
+        left: -100%;
+    }
+
     nav ul li a {
         display: block;
         color: #BCBDBE;
@@ -425,12 +485,24 @@ nav #navlogo{
         line-height: 50px;
         font-weight: bold;
     }
-    nav ul li a:hover {
-        background-color: #BCBDBE;
-        color: white;
+
+
+    nav #menu {
+        position: absolute;
+        right: 11px;
+        /*        float: right;*/
+        height: 50px;
     }
+
+    nav #menu img {
+
+        height: 46px;
+        width: auto;
+    }
+
     nav #navlogo {
         margin: 0;
+        height: 50px;
         font-size: 30pt;
         font-family: Poiret One;
     }
@@ -445,6 +517,7 @@ nav #navlogo{
         justify-content: center;
         align-items: center;
     }
+
     #content {
         margin: 0;
         /*    width: calc(100% - 560px);*/
@@ -452,6 +525,7 @@ nav #navlogo{
         position: relative;
         margin: auto;
     }
+
     section {
         background-color: white;
         width: 100%;
@@ -463,30 +537,34 @@ nav #navlogo{
         /*    margin: auto;*/
         margin-bottom: 75px;
         border-radius: 25px;
-/*        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);*/
+        /*        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);*/
     }
+
     .clear {
         clear: both;
     }
+
     p {
         text-align: justify
     }
+
     h1 {
         font-size: 30px;
         margin-bottom: 50px;
         font-family: Poiret One;
         text-transform: lowercase;
     }
+
     a {
         text-decoration: none;
         color: black;
     }
 
     .video {
-/*        width: 700px;*/
+        /*        width: 700px;*/
         width: 100vw;
         height: calc((100vw/16)*9);
-/*        max-height: 370px;*/
+        /*        max-height: 370px;*/
         margin-top: 100px;
         margin-bottom: 75px;
         background-color: transparent;
@@ -505,15 +583,15 @@ nav #navlogo{
         position: relative;
         width: 90vw;
         padding: 0 5vw;
-        margin:0px;
+        margin: 0px;
         justify-content: center;
         align-items: center;
-/*        padding: 50px 100px 40px 100px;*/
+        /*        padding: 50px 100px 40px 100px;*/
         height: auto;
     }
-    
+
     .gericht #essenbeschreibung,
-    .gericht p{
+    .gericht p {
         position: relative;
         width: 90vw;
         padding: 0;
@@ -521,13 +599,13 @@ nav #navlogo{
         margin: auto;
     }
 
-    .gericht img{
+    .gericht img {
         max-width: 300px;
         height: auto;
         margin: auto;
         margin-top: 10px;
         margin-bottom: 10px;
-/*        width: 20%;*/
+        /*        width: 20%;*/
         width: 70vw;
         border-radius: 50%;
 
@@ -537,13 +615,16 @@ nav #navlogo{
         transition: 1.5s;
         border-radius: 3%;
     }
-    #gericht1{
+
+    #gericht1 {
         display: flex;
     }
+
     #gericht1 img:hover {
         transition: 1.5s;
         border-radius: 3%;
     }
+
     #gericht2 img:hover {
         transition: 1.5s;
         border-radius: 3%;
@@ -568,7 +649,7 @@ nav #navlogo{
 
     .rating {
         position: relative;
-/*        width: 300px;*/
+        /*        width: 300px;*/
         width: calc(90vw - 10px);
         margin: auto;
         height: 150px;
@@ -589,10 +670,10 @@ nav #navlogo{
 
     .rating .slide {
         margin: 0 1.5%;
-        padding:  2%;
+        padding: 2%;
         width: 26%;
-/*        width: 33.33%;*/
-/*        margin: 1%;*/
+        /*        width: 33.33%;*/
+        /*        margin: 1%;*/
         height: 100px;
         float: left;
     }
@@ -632,9 +713,9 @@ nav #navlogo{
     }
 
     #attraktionen {
-        width:  calc(100% - 20px);
-        margin:0px;
-/*        padding: 50px 100px 40px 100px;*/
+        width: calc(100% - 20px);
+        margin: 0px;
+        /*        padding: 50px 100px 40px 100px;*/
         padding: 10px;
         display: flex;
     }
@@ -647,14 +728,15 @@ nav #navlogo{
 
     #attraktionen p {
         position: relative;
-/*        width: 530px;*/
+        /*        width: 530px;*/
         width: auto;
         margin: 20px;
     }
 
     #attraktionen img {
         height: auto;
-        width: 130px;;
+        width: 130px;
+        ;
         border-radius: 50%;
         margin: 10px;
     }
@@ -674,10 +756,12 @@ nav #navlogo{
         justify-content: center;
         position: relative;
     }
-    #buchentext{
-        width: 300px; 
+
+    #buchentext {
+        width: 300px;
         margin: auto
     }
+
     #flug {
         width: 70vw;
         height: 100%;
